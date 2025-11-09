@@ -2,6 +2,7 @@ package co.yixiang.yshop.module.system.framework.sms.core.property;
 
 import co.yixiang.yshop.module.system.framework.sms.core.enums.SmsChannelEnum;
 import lombok.Data;
+import lombok.experimental.Accessors;
 import org.springframework.validation.annotation.Validated;
 
 import jakarta.validation.constraints.NotEmpty;
@@ -15,6 +16,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @Data
 @Validated
+@Accessors(chain = true)
 public class SmsChannelProperties {
 
     /**

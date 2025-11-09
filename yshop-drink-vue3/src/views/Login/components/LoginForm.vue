@@ -137,7 +137,8 @@ const loginData = reactive({
 const getCode = async () => {
   // 情况一，未开启：则直接登录
   console.log('oginData.captchaEnable:',loginData.captchaEnable)
-  if (loginData.captchaEnable === 'false') {
+  // if (loginData.captchaEnable === 'false') {
+  if (true) {
     await handleLogin({})
   } else {
     // 情况二，已开启：则展示验证码；只有完成验证码的情况，才进行登录

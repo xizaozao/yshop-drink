@@ -1,6 +1,7 @@
 package co.yixiang.yshop.module.system.framework.sms.core.client.dto;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.time.LocalDateTime;
 
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
  * @author yshop
  */
 @Data
+@Accessors(chain = true)
 public class SmsReceiveRespDTO {
 
     /**

@@ -35,7 +35,7 @@ const whiteList: string[] = ['/login', '/refresh-token']
 
 // 创建axios实例
 const service: AxiosInstance = axios.create({
-  baseURL: base_url, // api 的 base_url
+  baseURL: '/admin-api', // api 的 base_url
   timeout: request_timeout, // 请求超时时间
   withCredentials: false // 禁用 Cookie 等信息
 })

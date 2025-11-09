@@ -2,6 +2,7 @@ package co.yixiang.yshop.module.mp.dal.dataobject.tag;
 
 import co.yixiang.yshop.module.mp.dal.dataobject.account.MpAccountDO;
 import lombok.*;
+import lombok.experimental.Accessors;
 
 import com.baomidou.mybatisplus.annotation.*;
 import co.yixiang.yshop.framework.mybatis.core.dataobject.BaseDO;
@@ -20,6 +21,7 @@ import me.chanjar.weixin.mp.bean.tag.WxUserTag;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Accessors(chain = true)
 public class MpTagDO extends BaseDO {
 
     /**

@@ -1,6 +1,7 @@
 package co.yixiang.yshop.module.system.framework.sms.core.client.dto;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * 短信发送 Response DTO
@@ -8,6 +9,7 @@ import lombok.Data;
  * @author yshop
  */
 @Data
+@Accessors(chain = true)
 public class SmsSendRespDTO {
 
     /**

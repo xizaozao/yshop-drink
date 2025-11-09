@@ -3,6 +3,7 @@ package co.yixiang.yshop.module.system.controller.admin.permission.vo.role;
 import com.mzt.logapi.starter.annotation.DiffLogField;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -10,6 +11,7 @@ import jakarta.validation.constraints.Size;
 
 @Schema(description = "管理后台 - 角色创建/更新 Request VO")
 @Data
+@Accessors(chain = true)
 public class RoleSaveReqVO {
 
     @Schema(description = "角色编号", example = "1")

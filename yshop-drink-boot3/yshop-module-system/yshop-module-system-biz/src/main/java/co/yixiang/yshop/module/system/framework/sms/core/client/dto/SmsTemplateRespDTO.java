@@ -2,6 +2,7 @@ package co.yixiang.yshop.module.system.framework.sms.core.client.dto;
 
 import co.yixiang.yshop.module.system.framework.sms.core.enums.SmsTemplateAuditStatusEnum;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * 短信模板 Response DTO
@@ -9,6 +10,7 @@ import lombok.Data;
  * @author yshop
  */
 @Data
+@Accessors(chain = true)
 public class SmsTemplateRespDTO {
 
     /**
